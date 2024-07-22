@@ -253,33 +253,27 @@ img {
 
 .trending-container {
   display: flex;
-  gap: 15px;
-}
-
-.trending-container .trending-profiles {
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.trending-container .trending-names {
+.trending-container .trending-profile {
   display: flex;
-  flex-direction: column;
-  gap: 23px;
+  gap: 15px;
 }
 
-.trending-names .name {
+.trending-profile div {
   display: flex;
   flex-direction: column;
 }
 
-.trending-names .username {
+.trending-profile .username {
   font-weight: bold;
   font-size: 15px;
   margin-bottom: 2px;
 }
 
-.trending-names .bio {
+.trending-profile .bio {
   font-size: 14px;
   color: rgb(107, 106, 106);
 }
