@@ -10,6 +10,10 @@ body {
   background-color: rgb(228, 233, 240);
 }
 
+img {
+  cursor: pointer;
+}
+
 .sidebar {
   background-color: #4196e6;
   display: flex;
@@ -17,8 +21,9 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 250px;
+  width: 240px;
   padding: 20px;
+  z-index: 999;
   /* display: none; */
 }
 
@@ -64,9 +69,11 @@ body {
 .header {
   background-color: white;
   position: fixed;
-  left: 250px;
+  left: 240px;
   right: 0;
   padding: 20px 40px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 500;
 }
 
 .header img {
@@ -124,7 +131,7 @@ body {
   grid-template-columns: 50px 1fr 90px 90px 90px;
   column-gap: 20px;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .user-menu img {
@@ -157,24 +164,18 @@ body {
 }
 
 .main-content {
-  padding-left: 265px;
-  padding-top: 180px;
+  padding-left: 260px;
+  padding-top: 175px;
   padding-bottom: 15px;
   padding-right: 15px;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  column-gap: 15px;
+  column-gap: 20px;
 }
 
 .content-title {
   font-weight: bold;
   font-size: 17px;
-}
-
-.main-content .projects-container {
-}
-
-.projects-container .project-label {
 }
 
 .project-grid {
@@ -191,6 +192,7 @@ body {
   padding: 20px 25px 20px 20px;
   border-radius: 8px;
   border-left: 8px solid rgb(243, 178, 0);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .project .title {
@@ -216,17 +218,14 @@ body {
   margin-inline: 10px;
 }
 
-.announcements-trending-container {
-
-}
-
 .announcements-container,
 .trending-container {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   margin-top: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .announcements-container .announcement {
@@ -260,13 +259,13 @@ body {
 .trending-container .trending-profiles {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .trending-container .trending-names {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 23px;
 }
 
 .trending-names .name {
